@@ -115,3 +115,13 @@ html {
 .cola{
     background: #ffffff;
 }
+.link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
