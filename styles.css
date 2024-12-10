@@ -125,3 +125,37 @@ html {
     color: #ffffff;
 
 }
+
+
+/* qor animat */
+/* Qorlar fon bo'ylab */
+.snowflakes {
+    position: fixed; /* Qorlar ekran bo'ylab harakatlanadi */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .snowflake {
+    position: absolute;
+    color: #dda3f6;
+    font-size: 24px;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+    animation: snow 8s linear infinite; /* Animatsiya davomiyligini uzaytiramiz */
+  }
+  
+  @keyframes snow {
+    0% {
+      transform: translateY(-10px); /* Qor yuqoridan boshlanadi */
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh); /* Qor pastga tushadi */
+      opacity: 0;
+    }
+  }
